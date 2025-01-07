@@ -395,7 +395,7 @@ void refresh_win(WINDOW *win)
 void show_yes_no(WINDOW *win, const char *question, const char cur_marked)
 {
 	const int highlight_color = COLOR_GREEN_BG;
-    mvwprintw(win, 2, 20 - (strlen(question) / 2), question);
+    	mvwprintw(win, 2, 20 - (strlen(question) / 2), "%s", question);
 	if(cur_marked == YES)
 	{
 		wattron(win, COLOR_PAIR(highlight_color));
@@ -414,7 +414,7 @@ void show_yes_no(WINDOW *win, const char *question, const char cur_marked)
 	{
 		wattroff(win, COLOR_PAIR(highlight_color));
 	}
-    box(win, 0, 0);	
+    	box(win, 0, 0);	
 	refresh_win(win);
 }
 
