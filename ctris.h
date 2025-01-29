@@ -15,7 +15,7 @@
 #include <limits.h>
 #include <time.h>
 
-#define VERSION "v0.42" // version info
+#define VERSION "v0.43" // version info
 #define HEIGHT 24 // height of the screen
 #define WIDTH 80 // width of the screen
 #define BOARD_HEIGHT (HEIGHT - 5) // height of the board
